@@ -1,4 +1,4 @@
-import { createContext, useReducer, useState, useEffect } from 'react';
+import { createContext, useState, useEffect } from 'react';
 import data from '.././dummyData.json';
 
 // Initial state
@@ -108,7 +108,6 @@ export const GlobalProvider = ({ children }) => {
   };
 
   const handleSearch = () => {
-    // applyFilter();
     setSearch((prev) => !prev);
   };
 
