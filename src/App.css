@@ -2,3 +2,8 @@
   margin: 3rem auto;
   max-width: 60rem;
 }
+
+img {
+  width: 100%;
+  display: block;
+}

@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .search .search-text {
-  font-size: 1.75rem;
-  font-weight: 500;
+  font-size: 1.95rem;
+  font-weight: 700;
 }
 
 .search .search-input {
@@ -17,9 +18,11 @@
   border-radius: 5px;
   border: 1px solid #cecece;
   padding: 0.5rem 1rem;
+  font-size: inherit;
   width: 100%;
 }
 
 .search input:focus {
   outline: none;
+  border-color: lightseagreen;
 }

@@ -1,0 +1,47 @@
+.filter-container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+.filter-container form .form-control {
+  padding: 1rem;
+  width: 100%;
+}
+.filter-container form .form-control:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.verticalLine {
+  border-right: 1px solid #aaaaaa;
+  height: 50px;
+}
+
+.filter-container form .form-control input,
+select {
+  border: none;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.filter-container form .form-control input:focus,
+select:focus {
+  outline: none;
+}
+
+.form-control .btn {
+  display: inline-block;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.7rem 0;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.form-control .btn:hover {
+  background-color: rgba(32, 178, 171, 0.712);
+}

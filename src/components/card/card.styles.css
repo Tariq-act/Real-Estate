@@ -1,0 +1,55 @@
+.card {
+  background-color: #fff;
+  font-size: 0.75rem;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  color: #999999;
+  font-weight: 500;
+}
+
+.card img {
+  height: 200px;
+}
+
+.card h1 {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.card .card-content {
+  padding: 1rem;
+}
+
+.card .card-content > * {
+  margin-bottom: 0.5rem;
+}
+
+.card-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .card-content .price span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: lightseagreen;
+}
+
+.card .card-content .rating span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: lightseagreen;
+}
+
+.card hr {
+  opacity: 0.3;
+}
+
+.card .card-footer {
+  font-size: 0.75rem;
+  display: flex;
+  color: lightseagreen;
+  justify-content: space-between;
+}

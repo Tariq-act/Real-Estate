@@ -1,5 +1,5 @@
 import React from 'react';
-import './navigation.style.css';
+import './navigation.styles.css';
 
 const Navigation = () => {
   return (
@@ -7,7 +7,7 @@ const Navigation = () => {
       <div className='navigation'>
         <div className='logo'>
           {' '}
-          <i class='fa-solid fa-house'></i> Estatery
+          <i className='fa-solid fa-house'></i> Estatery
         </div>
       </div>
     </div>
