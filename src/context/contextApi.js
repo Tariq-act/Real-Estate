@@ -21,14 +21,6 @@ export const GlobalProvider = ({ children }) => {
     setInputSearch(e.target.value);
   };
 
-  // const generateDataForDropDown = () => {
-  //   return [...new Set(list.map((item) => item.location))];
-  // };
-
-  // const generatePropertyType = () => {
-  //   return [...new Set(dataList.map((item) => item.type))];
-  // };
-
   const handleLocation = (e) => {
     setLocation(e.target.value);
   };
