@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import Card from '../../../components/card/card.component';
-import Navigation from '../../../components/navigation/navigation.component';
-import { GlobalContext } from '../../../context/contextApi';
+import Card from '../../components/card/card.component';
+import Navigation from '../../components/navigation/navigation.component';
+import { GlobalContext } from '../../context/contextApi';
 
-import '../../../components/cardList/cardList.styles.css';
+import '../../components/cardList/cardList.styles.css';
 
 const Favourite = () => {
   const { favorite } = useContext(GlobalContext);
