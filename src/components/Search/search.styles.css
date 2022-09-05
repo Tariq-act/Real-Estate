@@ -26,3 +26,9 @@
   outline: none;
   border-color: lightseagreen;
 }
+
+@media (max-width: 800px) {
+  .search {
+    flex-direction: column;
+  }
+}

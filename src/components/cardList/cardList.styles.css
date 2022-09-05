@@ -3,3 +3,15 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
+
+@media (max-width: 850px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+}

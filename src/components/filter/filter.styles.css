@@ -45,3 +45,23 @@ select:focus {
 .form-control .btn:hover {
   background-color: rgba(32, 178, 171, 0.712);
 }
+
+@media (max-width: 800px) {
+  .filter-container form .form-control input,
+  select,
+  .form-control .btn {
+    font-size: 0.9rem;
+  }
+
+  .filter-container form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .verticalLine {
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+    width: 100px;
+  }
+}
