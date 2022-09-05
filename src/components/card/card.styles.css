@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   background-color: #fff;
   font-size: 0.75rem;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
@@ -52,4 +53,30 @@
   display: flex;
   color: lightseagreen;
   justify-content: space-between;
+}
+
+.favourite-btn {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 100px;
+  border: none;
+  background-color: lightseagreen;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.favourite-btn:hover {
+  background-color: rgb(33, 143, 137);
+}
+
+.favourite-btn span {
+  color: yellow;
+}
+
+.favourite-btn:disabled {
+  background-color: gray;
+  color: white;
 }

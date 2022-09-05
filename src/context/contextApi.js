@@ -1,13 +1,32 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect, useReducer } from 'react';
 import data from '.././dummyData.json';
 
 // Initial state
-const initialState = {};
+const initialState = {
+  favorite: [],
+};
+
+const AppReducer = (state, action) => {
+  switch (action.type) {
+    case 'ADD_FAVOURITE':
+      return {
+        ...state,
+        favorite: [action.payload, ...state.favorite],
+      };
+    default:
+  }
+};
 
 export const GlobalContext = createContext(initialState);
 
 // provider component
 export const GlobalProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(AppReducer, initialState);
+
+  const addFavouriteList = (card) => {
+    dispatch({ type: 'ADD_FAVOURITE', payload: card });
+  };
+
   const [list, setList] = useState(data);
   const [inputSearch, setInputSearch] = useState('');
   const [location, setLocation] = useState('');
@@ -125,6 +144,8 @@ export const GlobalProvider = ({ children }) => {
         search,
         handleSearch,
         result,
+        favorite: state.favorite,
+        addFavouriteList,
       }}
     >
       {children}

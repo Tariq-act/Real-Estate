@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './card.styles.css';
+
+import { GlobalContext } from '../../context/contextApi';
 
 function Capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -9,9 +11,22 @@ const Card = ({ data }) => {
   const { coverSrc, price, title, location, bed, bathroom, sqtFeet, rating } =
     data;
 
+  const { addFavouriteList, favorite } = useContext(GlobalContext);
+
+  const storeFavourite = favorite.find((item) => item.id === data.id);
+
+  const disabledButton = storeFavourite ? true : false;
+
   return (
     <>
       <div className='card'>
+        <button
+          className='favourite-btn'
+          disabled={disabledButton}
+          onClick={() => addFavouriteList(data)}
+        >
+          <span class='lnr lnr-star'></span>
+        </button>
         <img src={require(`../../assets/images/${coverSrc}`)} alt='' />
 
         <div className='card-content'>
