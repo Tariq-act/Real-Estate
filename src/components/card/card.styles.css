@@ -72,11 +72,15 @@
   background-color: rgb(33, 143, 137);
 }
 
-.favourite-btn span {
-  color: yellow;
+.favourite-btn svg {
+  fill: yellow;
 }
 
 .favourite-btn:disabled {
   background-color: gray;
   color: white;
+}
+
+.favourite-btn:disabled svg {
+  fill: rgba(255, 255, 0, 0.653);
 }
